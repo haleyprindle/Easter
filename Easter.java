@@ -1,8 +1,8 @@
-//Haley
+//Haley 9/4/25
 //Calculates the day Easter falls on a given year
 
 public class Easter {
-    public static voice main (String[] args){
+    public static void main (String[] args){
     //code here
     int y = 2026;
     int a = y%19;
@@ -23,14 +23,14 @@ public class Easter {
     System.out.println("h = " +h);
     int i = c/4;
     System.out.println("i = " +i);
-    int k = k%4;
+    int k = c%4;
     System.out.println("k = " +k);
     int r = (32+2*e+2*i-h-k)%7;
     System.out.println("r = " +r);
     int m = (a+11*h+22*r)/451;
     System.out.println("m = " +m);
-    int n = (+r-7*m+114)/31;
+    int n = (h+r-7*m+114)/31;
     System.out.println("n = " +n);
-    int p = (+r-7*m+114)%31;
+    int p = (h+r-7*m+114)%31;
     System.out.println("p = " +p);
 }}
