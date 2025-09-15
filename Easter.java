@@ -33,4 +33,7 @@ public class Easter {
     System.out.println("n = " +n);
     int p = (h+r-7*m+114)%31;
     System.out.println("p = " +p);
+    int month = n;
+    int day = p+1;
+    System.out.println( "In " + y + ", Easter falls on "+ month + "/" + day);
 }}
